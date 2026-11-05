@@ -166,8 +166,15 @@ export default function SafaaPortfolio() {
     {
       title: "UFO Club Universiapolis",
       image: "/ufo.jpeg",
-      description:
-  "Served as General Secretary and Media Manager, supporting event organization and communication. Helped organize three concerts featuring STORMY, NAJM, and AUJISS; INKONNU and FETAH; and DRAGANOV.",
+      description: (
+        <>
+          Served as General Secretary and Media Manager, supporting event
+          organization and communication. Helped organize three concerts featuring{" "}
+          <strong>STORMY, NAJM, and AUJISS</strong>;{" "}
+          <strong>INKONNU and FETAH</strong>; and{" "}
+          <strong>DRAGANOV</strong>.
+        </>
+      ),
       quote: "",
       link: "",
     },
