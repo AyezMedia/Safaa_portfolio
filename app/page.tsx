@@ -53,13 +53,37 @@ export default function SafaaPortfolio() {
 
   const skills = {
     frontend: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
       "HTML5",
       "CSS3",
-      "JavaScript",
-      "React",
-      "TypeScript",
       "Tailwind CSS",
-      "Flutter",
+      "Angular (academic)",
+    ],
+    backend: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Python",
+      "Flask",
+      "Node.js (basics)",
+      "Express (basics)",
+    ],
+    mobile: ["Flutter"],
+    databases: ["PostgreSQL", "MySQL", "SQLite", "SQL"],
+    security: [
+      "JWT Authentication",
+      "Role-Based Access Control",
+      "AES Encryption",
+    ],
+    tools: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Figma",
+      "Power BI (academic)",
     ],
     marketing: [
       "Digital Marketing",
@@ -68,10 +92,17 @@ export default function SafaaPortfolio() {
       "Video Editing",
       "Community Management",
     ],
-    tools: ["Git", "GitHub", "VS Code", "Figma", "Canva"],
   };
 
   const projects = [
+    {
+      title: "Secure Credential-Sharing Platform",
+      description:
+        "Developed during my internship at Jway Services. A secure platform for sharing credentials with JWT authentication, role-based access control, and encrypted single-use links.",
+      stack: ["Next.js", "Java", "Spring Boot", "PostgreSQL", "JWT"],
+      github: "https://github.com/AyezMedia/jway-secure-access-platform.git",
+      emoji: "🔐",
+    },
     {
       title: "IBEE Landing Page",
       description:
@@ -117,18 +148,26 @@ export default function SafaaPortfolio() {
   ];
 
   const services = [
-    { title: "Landing Pages", icon: "💻" },
-    { title: "Frontend Interfaces", icon: "🎨" },
-    { title: "Content Support", icon: "📱" },
-    { title: "Brand Visuals", icon: "✨" },
+    { title: "Full-Stack Applications", icon: "💻" },
+    { title: "Backend & REST APIs", icon: "⚙️" },
+    { title: "Websites & Portfolios", icon: "🎨" },
+    { title: "Database Integration", icon: "🗄️" },
   ];
 
   const leadershipGallery = [
     {
+      title: "FEECRA 2026 — Maalem Tech",
+      image: "/feecra.jpeg",
+      description:
+        "Presented Maalem Tech, a service marketplace connecting clients with local technicians, at FEECRA 2026. Helped prepare and run our project stand, demonstrated the concept to visitors, and pitched it to the jury.",
+      quote: "",
+      link: "",
+    },
+    {
       title: "UFO Club Universiapolis",
       image: "/ufo.jpeg",
       description:
-        "Student leadership, teamwork, and event coordination through club activities and initiatives.",
+        "Served as General Secretary and Media Manager, helping coordinate club activities, organize events, and manage digital communication to engage the university community.",
       quote: "",
       link: "",
     },
@@ -136,7 +175,7 @@ export default function SafaaPortfolio() {
       title: "GDG On Campus Universiapolis",
       image: "/gdg.jpeg",
       description:
-        "Participation in tech events, workshops, and community-building activities for students.",
+        "Helped organize technology events and workshops, supporting team coordination, event preparation, and communication to encourage learning and knowledge sharing among students.",
       quote: "",
       link: "",
     },
@@ -144,7 +183,7 @@ export default function SafaaPortfolio() {
       title: "Lions Club Universiapolis",
       image: "/lions.jpeg",
       description:
-        "Community engagement, communication, volunteering, and social impact initiatives.",
+        "Created TikTok content to highlight volunteering activities and community initiatives. Supported event promotion and digital communication to raise awareness and encourage student involvement.",
       quote: "",
       link: "",
     },
@@ -255,7 +294,7 @@ export default function SafaaPortfolio() {
                 }`}
               >
                 <span className="inline-block h-2 w-2 rounded-full bg-violet-500" />
-                Frontend Developer • Digital Marketing Enthusiast
+                Full-Stack & Mobile Developer • Open to PFE & Freelance
               </motion.div>
 
               <motion.h1
@@ -271,17 +310,20 @@ export default function SafaaPortfolio() {
                   darkMode ? "text-violet-200/90" : "text-[#5f4b80]"
                 }`}
               >
-                Computer Engineering student creating modern, elegant, and
-                user-friendly digital experiences with a mix of{" "}
+                Final-year Computer Engineering student building modern, secure, and
+                user-friendly web and mobile applications through{" "}
                 <span className="font-semibold text-violet-400">
-                  frontend development
+                  full-stack development
                 </span>
-                , <span className="font-semibold text-violet-400">creativity</span>,
-                and{" "}
+                ,{" "}
                 <span className="font-semibold text-violet-400">
-                  digital marketing
+                  thoughtful design
                 </span>
-                .
+                , and{" "}
+                <span className="font-semibold text-violet-400">
+                  creativity
+                </span>
+                . Seeking a PFE internship from March 1, 2027, for at least 3 months.
               </motion.p>
 
               <motion.div
@@ -485,9 +527,9 @@ export default function SafaaPortfolio() {
                 className="hidden gap-4 sm:grid-cols-3 lg:grid"
               >
                 {[
-                  { label: "Focus", value: "Frontend" },
-                  { label: "Creative Side", value: "Marketing" },
-                  { label: "Open To", value: "Freelance" },
+                  { label: "Focus", value: "Web & Mobile" },
+                  { label: "Creative Side", value: "UI/UX & Media" },
+                  { label: "Open To", value: "PFE + Freelance" },
                 ].map((item) => (
                   <motion.div
                     key={item.label}
@@ -549,26 +591,21 @@ export default function SafaaPortfolio() {
                 darkMode ? "text-violet-100" : "text-[#4c2f7a]"
               }`}
             >
-              A soft, modern portfolio with a creative touch.
+              Building useful applications with a creative touch.
             </h2>
             <p
               className={`mt-5 leading-8 ${
                 darkMode ? "text-violet-200/90" : "text-[#5f4b80]"
               }`}
             >
-              I am a Computer Engineering student specializing in Cybersecurity
-              at Universiapolis. I enjoy building responsive web interfaces,
-              working on practical digital projects, and mixing technical
-              thinking with visual creativity.
+              I am a final-year Computer Engineering student at Universiapolis, with a background in Cybersecurity and a focus on full-stack web and mobile development. I build applications using React, Next.js, Java, Spring Boot, and PostgreSQL, and also work with Flutter.
             </p>
             <p
               className={`mt-4 leading-8 ${
                 darkMode ? "text-violet-200/90" : "text-[#5f4b80]"
               }`}
             >
-              Alongside my studies, I have been active in student leadership,
-              event organization, community work, and digital communication
-              through UFO Club, GDG On Campus, and Lions Club Universiapolis.
+              During my internship at Jway Services, I developed a secure credential-sharing platform with JWT authentication, role-based access control, and encrypted single-use links. Alongside my technical projects, I create freelance portfolio websites and take part in student leadership and community activities. I also presented Maalem Tech at FEECRA 2026 and helped prepare and run our project stand.
             </p>
           </motion.div>
 
@@ -585,7 +622,7 @@ export default function SafaaPortfolio() {
                 darkMode ? "text-violet-300" : "text-violet-500"
               }`}
             >
-              Creative Services
+              Development Services
             </p>
             <h2
               className={`mt-3 text-3xl font-black ${
@@ -596,10 +633,10 @@ export default function SafaaPortfolio() {
             </h2>
             <div className="mt-6 space-y-3">
               {[
-                "Landing Page Design & Development",
-                "Frontend Web Interfaces",
-                "Social Media Content Support",
-                "Digital Marketing Visual Content",
+                "Full-Stack Web Applications",
+                "Backend Development & REST APIs",
+                "Responsive Websites & Portfolio Design",
+                "Database Integration & Authentication",
               ].map((service) => (
                 <motion.div
                   key={service}
@@ -646,8 +683,12 @@ export default function SafaaPortfolio() {
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {[
             { title: "Frontend", items: skills.frontend },
+            { title: "Backend", items: skills.backend },
+            { title: "Mobile", items: skills.mobile },
+            { title: "Databases", items: skills.databases },
+            { title: "Application Security", items: skills.security },
+            { title: "Tools & BI", items: skills.tools },
             { title: "Digital Marketing", items: skills.marketing },
-            { title: "Tools", items: skills.tools },
           ].map((group, index) => (
             <motion.div
               key={group.title}
@@ -699,7 +740,7 @@ export default function SafaaPortfolio() {
         id="projects"
         className="scroll-mt-32 mx-auto max-w-6xl px-6 py-16"
         variants={staggerContainer}
-        initial="hidden"
+        initial="show"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
       >
