@@ -430,7 +430,7 @@ export default function SafaaPortfolio() {
                         darkMode ? "text-violet-100" : "text-[#4c2f7a]"
                       }`}
                     >
-                      Frontend Development
+                      Full-Stack Development
                     </p>
                   </div>
 
@@ -453,7 +453,7 @@ export default function SafaaPortfolio() {
                         darkMode ? "text-violet-100" : "text-[#4c2f7a]"
                       }`}
                     >
-                      Digital Marketing
+                      Mobile Development
                     </p>
                   </div>
 
